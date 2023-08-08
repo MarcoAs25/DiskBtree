@@ -129,7 +129,6 @@ string record<T, MIN_DEGREE>::toString() {
 
 template <class T,const unsigned int MIN_DEGREE>
 void record<T, MIN_DEGREE>::fromString(string repr) {
-   // cout<<"rrrroi"<<endl;
     int pos = 0;
     string datastring = repr.substr(pos,data.size());
     this->data.fromString(datastring);
